@@ -1,0 +1,26 @@
+
+=== Running test for CUBIC for 60 seconds ===
+$ /home/venkat/pantheon/src/wrappers/cubic.py run_first
+$ /home/venkat/pantheon/src/wrappers/cubic.py receiver 45119
+------------------------------------------------------------
+Server listening on TCP port 45119
+TCP congestion control set to cubic
+TCP window size:  128 KByte (default)
+------------------------------------------------------------
+$ /home/venkat/pantheon/src/wrappers/cubic.py sender 127.0.0.1 45119
+[  1] local 127.0.0.1 port 45119 connected with 127.0.0.1 port 43284 (icwnd/mss/irtt=320/32768/26)
+------------------------------------------------------------
+Client connecting to 127.0.0.1, TCP port 45119
+TCP congestion control set to cubic
+TCP window size: 2.50 MByte (default)
+------------------------------------------------------------
+[  1] local 127.0.0.1 port 43284 connected with 127.0.0.1 port 45119 (icwnd/mss/irtt=319/32741/33)
+kill_proc_group: killed process group with pgid 104506
+kill_proc_group: killed process group with pgid 104517
+Waiting for server threads to complete. Interrupt again to force quit.
+[✓] Simulated metrics saved: logs-1/metrics_cubic_1744925202.csv
+✅ All tests finished cleanly
+[ ID] Interval       Transfer     Bandwidth
+[  1] 0.0000-59.9878 sec   472 GBytes  67.6 Gbits/sec
+[ ID] Interval       Transfer     Bandwidth
+[  1] 0.0000-59.9889 sec   472 GBytes  67.6 Gbits/sec

@@ -1,0 +1,26 @@
+
+=== Running test for VEGAS for 60 seconds ===
+$ /home/venkat/pantheon/src/wrappers/vegas.py run_first
+$ /home/venkat/pantheon/src/wrappers/vegas.py receiver 33701
+Attempt to set 'vegas' congestion control failed: Operation not permitted
+------------------------------------------------------------
+Server listening on TCP port 33701
+TCP window size:  128 KByte (default)
+------------------------------------------------------------
+$ /home/venkat/pantheon/src/wrappers/vegas.py sender 127.0.0.1 33701
+Attempt to set 'vegas' congestion control failed: Operation not permitted
+------------------------------------------------------------
+Client connecting to 127.0.0.1, TCP port 33701
+TCP window size: 3.76 MByte (default)
+------------------------------------------------------------
+[  1] local 127.0.0.1 port 45692 connected with 127.0.0.1 port 33701 (icwnd/mss/irtt=319/32741/50)
+[  1] local 127.0.0.1 port 33701 connected with 127.0.0.1 port 45692 (icwnd/mss/irtt=320/32768/18)
+kill_proc_group: killed process group with pgid 104616
+kill_proc_group: killed process group with pgid 104624
+Waiting for server threads to complete. Interrupt again to force quit.
+[✓] Simulated metrics saved: logs-3/metrics_vegas_1744925328.csv
+✅ All tests finished cleanly
+[ ID] Interval       Transfer     Bandwidth
+[  1] 0.0000-59.9846 sec   110 GBytes  15.7 Gbits/sec
+[ ID] Interval       Transfer     Bandwidth
+[  1] 0.0000-59.9965 sec   110 GBytes  15.7 Gbits/sec
