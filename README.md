@@ -1,4 +1,5 @@
-README.md
+**README.md**
+
 Pantheon Congestion Control Experiments
 Computer Networks – Programming Assignment 3 (Spring 2025)
 
@@ -113,11 +114,17 @@ Logging & Output
 Each experiment was executed for 60 seconds. Output was collected in the following format:
 
 results/
+
 ├── cubic_low.log
+
 ├── cubic_high.log
+
 ├── bbr_low.log
+
 ├── bbr_high.log
+
 ├── vegas_low.log
+
 ├── vegas_high.log
 
 Logs contain standard output from Pantheon scripts, including:
@@ -138,12 +145,12 @@ This script runs all 6 combinations of CC schemes × network profiles and stores
 You can modify runtests.py to add more protocols or customize runtime durations.
 
 
-Final Thoughts
+**Final Thoughts**
 This project required considerable debugging, compatibility fixes, and automation to match the assignment requirements using a now-deprecated codebase. Despite these limitations, all parts of Part B were successfully completed, and the results were collected for Part C analysis.
 
 The provided code, logs, and instructions should allow full reproducibility of the tests on any Linux machine or VM, as long as basic kernel features and packages are available.
 
-For further extension:
+**For further extension:**
 You may add more CC schemes like Copa or Vivace
 Replace trace files with custom Mahimahi traces
 Visualize results using matplotlib and pandas
